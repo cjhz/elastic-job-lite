@@ -599,7 +599,9 @@
     <repositories>
         <repository>
             <id>alfresco-maven-repo</id>
-            <url>https://maven.alfresco.com/nexus/content/groups/public/</url>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+
+<!--            <url>https://maven.alfresco.com/nexus/content/groups/public/</url>-->
         </repository>
         <repository>
             <id>java-net</id>

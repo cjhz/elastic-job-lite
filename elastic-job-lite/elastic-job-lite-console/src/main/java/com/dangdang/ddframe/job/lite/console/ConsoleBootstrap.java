@@ -57,6 +57,7 @@ public final class ConsoleBootstrap {
         RestfulServer restfulServer = new RestfulServer(port);
         restfulServer.addFilter(GlobalConfigurationFilter.class, "*.html")
                      .addFilter(WwwAuthFilter.class, "/")
+                     .addFilter(WwwAuthFilter.class, "/api/*")
                      .addFilter(WwwAuthFilter.class, "*.html")
                      .start(JobOperationRestfulApi.class.getPackage().getName(), Optional.of(CONSOLE_PATH));
     }
